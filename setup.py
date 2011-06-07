@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name='pyinputevent',
-    version='0.1',
+    version='0.0.1',
     packages=['pyinputevent',],
     license='MIT license',
     url='https://github.com/ismell/pyinputevent',

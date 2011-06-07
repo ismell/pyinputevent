@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
-from uinput import UInputDevice
-from forwarddevice import ForwardDevice
+from pyinputevent.uinput import UInputDevice
+from pyinputevent.forwarddevice import ForwardDevice
 import select
 import logging
 import getopt

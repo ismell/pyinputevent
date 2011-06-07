@@ -1,1 +1,4 @@
+dist
 *.pyc
+pyinputevent.egg-info/
+MANIFEST
