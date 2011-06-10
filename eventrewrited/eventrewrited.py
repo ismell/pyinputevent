@@ -118,7 +118,7 @@ def main(options):
 if __name__ == '__main__':
     logger = logging.getLogger()
     try:
-        opts, args = getopt.getopt(sys.argv[1:], "vqpf", ["pymap=", "foreground"])
+        opts, args = getopt.getopt(sys.argv[1:], "vqp:f", ["path=", "foreground"])
     except getopt.GetoptError, err:
         # print help information and exit:
         print str(err) # will print something like "option -a not recognized"
@@ -130,10 +130,10 @@ if __name__ == '__main__':
             logger.setLevel(logger.getEffectiveLevel()-10)
         elif opt == "-q":
             logger.setLevel(logger.getEffectiveLevel()+10)
-        elif opt in ("-p", "--pymap"):
+        elif opt in ("-p", "--path"):
             options['path'] = arg
         elif opt in ("-f", "--foreground"):
-            options['foreground'] = true
+            options['foreground'] = True
         else:
             assert False, "unhandled option"
     if (options['path'] == None):
